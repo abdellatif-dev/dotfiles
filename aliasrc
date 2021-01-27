@@ -47,3 +47,5 @@ alias dev='cd ~/Desktop/dev/'
 alias scripts="cd ~/scripts"
 alias btw="echo 'I use Arch linux'"
 alias dot='git --git-dir=dotfiles --work-tree=/home/flagmate'
+alias dotdiff='dot diff --color | diff-so-fancy'
+alias dotpush='dot push origin master'
