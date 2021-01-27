@@ -1,0 +1,81 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+env:
+  TERM: xterm-256color 
+
+window:
+  dynamic_padding: false
+  title: Alacritty
+  dynamic_title: true
+
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+font:
+  normal:
+    family: Hack NF 
+    style: Regular
+
+  bold:
+    family: Hack NF
+    style: Bold
+
+  italic:
+    family: Hack NF
+    style: Italic
+
+  bold_italic:
+    family: Hack NF
+
+    style: Bold Italic
+
+  size: 10.0
+
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: '#090A0F'
+    foreground: '#AAAAAA'
+
+  # Normal colors
+  normal:
+    black:   '#0F111A'
+    red:     '#D41919'
+    green:   '#5E97AF'
+    yellow:  '#FAC86A'
+    blue:    '#A574C3'
+    magenta: '#57F199'
+    cyan:    '#505A7A'
+    white:   '#F9FAFD'
+
+  # Bright colors
+  bright:
+    black:   '#45BABF'
+    red:     '#EC0101'
+    green:   '#89DDFF'
+    yellow:  '#E98567'
+    blue:    '#B797CA'
+    magenta: '#A9FECD'
+    cyan:    '#B2B2CC'
+    white:   '#A4A4A4'
+
+
+# Background opacity
+background_opacity: 0.8
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: false
+
+mouse:
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  hide_when_typing: true 
+
+  url:
+    launcher:
+      program: xdg-open
+
+debug:
+  render_timer: false
+  print_events: false

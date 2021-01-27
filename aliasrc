@@ -1,0 +1,49 @@
+
+# If you come from bash you might have to change your $PATH.
+# my alias
+alias wifi='ifconfig wlan0'
+alias cl='reset'
+alias rt='rm * -rf'
+alias f='df -h'
+alias ip='ip -color=auto'
+alias d='diff --color=auto'
+alias start='afk -k "starting soon" 0 7 0'
+# ls
+alias la='lsd -a'
+alias lla='lsd -la'
+alias ll='lsd -l'
+alias w='feh --bg-scale ~/Pictures/967564-free-best-linux-wallpapers-2560x1440-720p.jpg'
+alias ls='lsd'
+alias l='lsd'
+alias c='bat --theme TwoDark'
+alias p='sudo pacman'
+alias s='sudo'
+alias k='killall'
+alias x='startx'
+alias cleanpackages='sudo pacman -Rns $(pacman -Qtdq)'
+alias e='exec zsh'
+alias off='sudo poweroff'
+alias re='sudo reboot'
+alias cf='nvim ~/.zshrc' # Quick access to the ~/.zshrc file
+alias wget="wget -U 'noleak'"
+alias curl="curl --user-agent 'noleak'"
+alias grep='grep --color'
+alias gd='git diff --color | diff-so-fancy'
+alias g='git'
+alias r='rm -rivf'
+alias clh="history -c;reset"
+alias t='trash'
+alias tr='trash-restore'
+alias te='trash-empty'
+alias tl='trash-list'
+alias cp='cp -iv'
+alias a='alsamixer'
+alias mv='mv -iv'
+alias m='sudo mount'
+alias u='sudo umount -l'
+alias v='nvim'
+# alias to auto cd
+alias dev='cd ~/Desktop/dev/'
+alias scripts="cd ~/scripts"
+alias btw="echo 'I use Arch linux'"
+alias dot='git --git-dir=dotfiles --work-tree=/home/flagmate'

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo " [$(df -h | awk '/^\/dev\/sda2/ {print" / = " $3 "/"$2 "  " $5 }')] "
+
