@@ -6,6 +6,7 @@
 * st-abdellatif-git (terminal ,aur)
 * pcmanfm (file manager)
 * pass (tui password manager)
+* alacritty (terminal)
 * simplescreenrecorder (streaming/recording screen, 
 * arandr (gui for xrandr)
 * bat (replace cat)
