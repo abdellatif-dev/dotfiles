@@ -4,15 +4,12 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 
 
 terminal = "alacritty"
-editor = "nvim"
-editor_cmd = terminal .. " -e " .. editor
 
 modkey = "Mod4"
 
 
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
@@ -26,7 +23,6 @@ globalkeys = gears.table.join(
               {description = "view previous", group = "tag"}),
     awful.key({ modkey,           }, "l",  awful.tag.viewnext,
               {description = "view next", group = "tag"}),
-    awful.key({ modkey,           }, "Escape", awful.tag.history.restore, {description = "go back", group = "tag"}),
 
     awful.key({ modkey, "Control"    }, "h", function () awful.client.focus.byidx(1) end,
               {description = "focus next by index", group = "client"}),
@@ -43,20 +39,17 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
               {description = "jump to urgent client", group = "client"}),
 
-    awful.key({ modkey,   }, "k",     function () awful.tag.incmwfact( 0.05)    end),
-    awful.key({ modkey,   }, "j",     function () awful.tag.incmwfact(-0.05)    end),
+    awful.key({ modkey,   }, "k",     function () awful.tag.incmwfact( 0.001)    end),
+    awful.key({ modkey,   }, "j",     function () awful.tag.incmwfact(-0.001)    end),
 
     awful.key({ modkey, }, "t", function () awful.spawn(terminal) end,
-            {description = "open st", group = "a software"}),
+            {description = "open alacritty", group = "a software"}),
 
     awful.key({ modkey,  }, "p", function () awful.util.spawn("passmenu") end,
             {description = "open passmenu", group = "a software"}),
 
     awful.key({ modkey, }, "d", function () awful.util.spawn("dmenu_run") end,
             {description = "open dmenu_run", group = "a software"}),
-
-    awful.key({ modkey, "Control" }, "s", function () awful.util.spawn("simplescreenrecorder") end,
-              {description = "simplescreenrecorder", group = "a software"}),
 
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
@@ -82,16 +75,9 @@ globalkeys = gears.table.join(
               end,
               {description = "restore minimized", group = "client"}),
 
+    awful.key({ modkey , "Control" }, "b",     function () awful.util.spawn("brave-dev") end,
+              {description = "run brave", group = "a software"}),
 
-
-    awful.key({ modkey, "Control" }, "f",     function () awful.util.spawn("pcmanfm") end,
-              {description = "run pcmanfm", group = "a software"}),
-
-    awful.key({ modkey , }, "b",     function () awful.util.spawn("surf") end,
-              {description = "run surf", group = "a software"}),
-
-    awful.key({ modkey , "Control" }, "b",     function () awful.util.spawn("brave-browser-nightly") end,
-              {description = "run brave", group = "a software"})
 ) 
 for i = 1, 9 do
     globalkeys = gears.table.join(globalkeys,
@@ -180,7 +166,6 @@ clientbuttons = gears.table.join(
         awful.mouse.client.resize(c)
     end)
 )
-
 
 -- Set keys
 root.keys(globalkeys)

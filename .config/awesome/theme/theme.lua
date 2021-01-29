@@ -1,7 +1,7 @@
 local theme = {}
 
 
-theme.font          = "Hack NF 10"
+theme.font          = "Hack NF 11"
 
 theme.awesome_icon  = "~/.config/awesome/theme/artix-icon.png"
 theme.menu_height = 15

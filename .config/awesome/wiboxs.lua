@@ -4,41 +4,6 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 local menubar = require("menubar")
 
-
---{{{ laucher widget
--- Create a laucher widget and a main menu
-myawesomemenu = {
-  { "manual", terminal .. " -e man awesome" },
-  { "edit config", editor_cmd .. "alacritty -e 'nvim '" .. awesome.conffile },
-  { "restart", awesome.restart },
-  { "quit", awesome.quit }
-}
-
-termmenu = {
-  {"simple terminal" ,"st"},
-  { "alacritty", "alacritty" },
-}
-
-browsermenu = {
-  {"brave", "brave"},
-}
-
-shells = {
-  { "zsh", "alacritty -e 'zsh'" },
-  { "bash", "alacritty -e 'bash'" },
-  { "python", "alacritty -e 'python3'" },
-}
-
-
-mymainmenu = awful.menu({
-items = {
-  { "terminals", termmenu },
-  {"shells", shells},
-  { "awesome", myawesomemenu, beautiful.awesome_icon},
-}
-})
---}}}
-
 beautiful.init(gears.filesystem.get_configuration_dir() .. "./theme/theme.lua")
 -- Create a wibox for each screen and add it
 mywibox = {}
