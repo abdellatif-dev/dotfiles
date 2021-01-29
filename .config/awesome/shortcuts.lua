@@ -76,7 +76,7 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     awful.key({ modkey , "Control" }, "b",     function () awful.util.spawn("brave-dev") end,
-              {description = "run brave", group = "a software"}),
+              {description = "run brave", group = "a software"})
 
 ) 
 for i = 1, 9 do
