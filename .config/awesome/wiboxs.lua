@@ -8,10 +8,11 @@ beautiful.init(gears.filesystem.get_configuration_dir() .. "./theme/theme.lua")
 -- Create a wibox for each screen and add it
 mywibox = {}
 mypromptbox = {}
-mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
-                                     menu = mymainmenu })
-                                     
 -- Menubar configuration
+
+local mytextclock = wibox.widget.textclock('<span font="hack Nerd Font regular 10"></span> %A %d/%b/%Y || %r ')
+
+
 menubar.utils.terminal = "alacritty" -- Set the terminal for applications that require it
 -- }}}
 mylayoutbox = {}
@@ -20,8 +21,7 @@ mytaglist.buttons = awful.util.table.join(
                     awful.button({ }, 1, awful.tag.viewonly),
                     awful.button({ modkey }, 1, awful.client.movetotag),
                     awful.button({ }, 3, awful.tag.viewtoggle),
-                    awful.button({ modkey }, 3, awful.client.toggletag),
-                    awful.button({ }, 4, function(t) awful.tag.viewnext(awful.tag.getscreen(t)) end),
+                    awful.button({ modkey }, 3, awful.client.toggletag), awful.button({ }, 4, function(t) awful.tag.viewnext(awful.tag.getscreen(t)) end),
                     awful.button({ }, 5, function(t) awful.tag.viewprev(awful.tag.getscreen(t)) end)
                     )
 mytasklist = {}
@@ -74,21 +74,20 @@ for s = 1, screen.count() do
     mytaglist[s] = awful.widget.taglist(s, awful.widget.taglist.filter.all, mytaglist.buttons)
 
     -- Create a tasklist widget
-    --mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
+    mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
 
     -- Create the wibox
     mywibox[s] = awful.wibox({ position = "top", screen = s })
 
     -- Widgets that are aligned to the left
     local left_layout = wibox.layout.fixed.horizontal()
-    --left_layout:add(mylauncher)
     left_layout:add(mytaglist[s])
-    -- left_layout:add(mypromptbox[s])
+    left_layout:add(mypromptbox[s])
 
     -- Widgets that are aligned to the right
    local right_layout = wibox.layout.fixed.horizontal()
-   -- if s == 1 then right_layout:add(wibox.widget.systray()) end
-    -- right_layout:add(mytextclock)
+   if s == 1 then right_layout:add(wibox.widget.systray()) end
+    right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)

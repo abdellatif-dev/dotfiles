@@ -4,10 +4,8 @@ local theme = {}
 theme.font          = "Hack NF 11"
 
 theme.awesome_icon  = "~/.config/awesome/theme/artix-icon.png"
-theme.menu_height = 15
-theme.menu_width  = 150
 
-theme.useless_gap   = 9
+theme.useless_gap   = 7
 
 -- {{{ colors
 
