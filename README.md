@@ -15,7 +15,8 @@
 * zsh & zsh-autosuggestions & zsh-syntax-highlighting (shell)
 * paru (aur helper)
 * lsd (ls like command)
-
+* vifm
+`git clone .config/vifm/vifm_devicons .config/vifm/vifm_devicons`
 # script
 - [X] arch-based distros
 
