@@ -4,9 +4,9 @@
   - **mod4** = super key / window key
   - **mod1** = alt key
 - some hotkey
-  - ~~browser~~ ( **brave-dev** ) = mod4 + control + b
-  - ~~terminal~~ ( **alacritty** ) = mod4 + t
-  - ~~close apps~~ = mod4 + w
+  - browser ( **brave-dev** ) = mod4 + control + b
+  - terminal ( **alacritty** ) = mod4 + t
+  - **close apps** = mod4 + w
 
 # screenshots
 
