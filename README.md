@@ -67,5 +67,5 @@ exec awesome
 - starship
 
 ```sh
-paru -S starship-bin
+paru starship-bin
 ```
