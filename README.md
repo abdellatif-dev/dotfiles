@@ -1,11 +1,15 @@
 # awesome config
 
-## mod keys
+## shortcuts
+
+all shortcuts for awesome wm can be found in **~/.config/awesome/shortcuts.lua**
+
+### mod keys
 
 - **mod4** = super key / window key
 - **mod1** = alt key
 
-## shortcuts
+### hotkeys
 
 - browser ( **brave-dev** ) = mod4 + control + b
 - terminal ( **alacritty** ) = mod4 + t
