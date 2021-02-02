@@ -58,3 +58,9 @@ cd ~
 sh ~/.config/awesome/scripts/keyboardxmodmap.sh &
 exec awesome
 ```
+
+## other stuff
+
+- htop from [TommyLuco/.config](https://github.com/TommyLuco/.config)
+- my keyboard layouts
+  `i'm something of a vim user myself so i remapped escape to LOCK_CAP and delete to the right_alt because i use these keys a lot in my work flow`
