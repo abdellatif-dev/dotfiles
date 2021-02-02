@@ -1,5 +1,11 @@
 # my dotfiles
 
+## screenshots
+
+|                       layouts                       |                        wallpaper                        |
+| :-------------------------------------------------: | :-----------------------------------------------------: |
+| ![screenshots/layouts.png](screenshots/layouts.png) | ![screenshots/wallpaper.png](screenshots/wallpaper.png) |
+
 ## awesome config
 
 ### shortcuts
@@ -43,9 +49,3 @@ all shortcuts for awesome wm can be found in [~/.config/awesome/shortcuts.lua](.
 - save ( **:w** ) = space + s
 - reload nvim = space + r
 - Nerd tree = space + n
-
-## screenshots
-
-|                       layouts                       |                        wallpaper                        |
-| :-------------------------------------------------: | :-----------------------------------------------------: |
-| ![screenshots/layouts.png](screenshots/layouts.png) | ![screenshots/wallpaper.png](screenshots/wallpaper.png) |
