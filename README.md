@@ -45,7 +45,16 @@ all shortcuts for awesome wm can be found in [~/.config/awesome/shortcuts.lua](.
 
 ### shortcuts
 
-- quit (~~:wq~~ **:x**) = space + q
+- quit and save (~~:wq~~ **:x**) = space + q
 - save ( **:w** ) = space + s
 - reload nvim = space + r
 - Nerd tree = space + n
+
+## xinit
+
+```sh
+#!/bin/sh
+cd ~
+sh ~/.config/awesome/scripts/keyboardxmodmap.sh &
+exec awesome
+```
