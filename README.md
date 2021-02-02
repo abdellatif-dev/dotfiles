@@ -18,6 +18,11 @@ all shortcuts for awesome wm can be found in [~/.config/awesome/shortcuts.lua](.
 - **dmenu** = mod4 + d
 - **mount usb** = mod1 + m
 
+# neovim config
+
+- theme = [material](https://github.com/jdkanani/vim-material-theme.git)
+- plugin manager [Vundle](git clone https://github.com/VundleVim/Vundle.vim.git~/.vim/bundle/Vundle.vim)
+
 # screenshots
 
 |                       layouts                       |                        wallpaper                        |

@@ -4,3 +4,6 @@
 [submodule ".config/vifm/vifm_devicons"]
 	path = .config/vifm/vifm_devicons
 	url = https://github.com/cirala/vifm_devicons
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
