@@ -2,7 +2,7 @@
 
 ## shortcuts
 
-all shortcuts for awesome wm can be found in **~/.config/awesome/shortcuts.lua**
+all shortcuts for awesome wm can be found in [~/.config/awesome/shortcuts.lua](.config/awesome/shortcuts)
 
 ### mod keys
 
