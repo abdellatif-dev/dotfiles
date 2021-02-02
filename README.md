@@ -64,3 +64,8 @@ exec awesome
 - htop from [TommyLuco/.config](https://github.com/TommyLuco/.config)
 - my keyboard layouts
   `i'm something of a vim user myself so i remapped escape to LOCK_CAP and delete to the right_alt because i use these keys a lot in my work flow`
+- starship
+
+```sh
+paru -S starship-bin
+```
