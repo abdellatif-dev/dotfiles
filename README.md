@@ -1,15 +1,17 @@
-# awesome config
+# my dotfiles
 
-## shortcuts
+## awesome config
+
+### shortcuts
 
 all shortcuts for awesome wm can be found in [~/.config/awesome/shortcuts.lua](.config/awesome/shortcuts.lua)
 
-### mod keys
+#### mod keys
 
 - **mod4** = super key / window key
 - **mod1** = alt key
 
-### hotkeys
+#### hotkeys
 
 - browser ( **brave-dev** ) = mod4 + control + b
 - terminal ( **alacritty** ) = mod4 + t
@@ -18,12 +20,31 @@ all shortcuts for awesome wm can be found in [~/.config/awesome/shortcuts.lua](.
 - **dmenu** = mod4 + d
 - **mount usb** = mod1 + m
 
-# neovim config
+## neovim config
 
 - theme = [material](https://github.com/jdkanani/vim-material-theme.git)
 - plugin manager [Vundle](git clone https://github.com/VundleVim/Vundle.vim.git~/.vim/bundle/Vundle.vim)
 
-# screenshots
+### coc-neovim
+
+- coc-css
+- coc-eslint
+- coc-highlight
+- coc-html
+- coc-json
+- coc-lua
+- coc-prettier
+- coc-python
+- coc-tsserver
+
+### shortcuts
+
+- quit (~~:wq~~ **:x**) = space + q
+- save ( **:w** ) = space + s
+- reload nvim = space + r
+- Nerd tree = space + n
+
+## screenshots
 
 |                       layouts                       |                        wallpaper                        |
 | :-------------------------------------------------: | :-----------------------------------------------------: |
