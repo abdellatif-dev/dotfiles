@@ -69,3 +69,5 @@ exec awesome
 ```sh
 paru starship-bin
 ```
+- alacritty terminal my config [here](./.config/alacritty/alacritty.yml)
+
