@@ -55,18 +55,15 @@ export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;3'
 
-export MANPATH="/usr/local/man:$MANPATH"
-
 bindkey "^[[3;3~" delete-char
 
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 
-PATH=$PATH:/home/flagmate/scripts/;export PATH;
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source $HOME/aliasrc
-
+export PATH=$PATH:~/scripts
 
 autoload -U colors && colors
 # Custom ZSH Binds
@@ -84,7 +81,7 @@ ex () {
       *.tar.gz)    tar xzf $1   ;;
       *.tar.xz)    tar xJf $1   ;;
       *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1     ;;
+      *.rar)       unrar x $1   ;;
       *.gz)        gunzip $1    ;;
       *.tar)       tar xf $1    ;;
       *.tbz2)      tar xjf $1   ;;
