@@ -6,6 +6,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 terminal = "alacritty"
 
 modkey = "Mod4"
+key = "Mod1"
 
 
 -- {{{ Mouse bindings
@@ -39,14 +40,11 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
               {description = "jump to urgent client", group = "client"}),
 
-    awful.key({ modkey,   }, "k",     function () awful.tag.incmwfact( 0.001)    end),
-    awful.key({ modkey,   }, "j",     function () awful.tag.incmwfact(-0.001)    end),
+    awful.key({ modkey,   }, "k",     function () awful.tag.incmwfact( 0.01)    end),
+    awful.key({ modkey,   }, "j",     function () awful.tag.incmwfact(-0.01)    end),
 
     awful.key({ modkey, }, "t", function () awful.spawn(terminal) end,
             {description = "open alacritty", group = "a software"}),
-
-    awful.key({ modkey,  }, "p", function () awful.util.spawn("passmenu") end,
-            {description = "open passmenu", group = "a software"}),
 
     awful.key({ modkey, }, "d", function () awful.util.spawn("dmenu_run") end,
             {description = "open dmenu_run", group = "a software"}),
@@ -76,7 +74,10 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     awful.key({ modkey , "Control" }, "b",     function () awful.util.spawn("brave-dev") end,
-              {description = "run brave", group = "a software"})
+              {description = "run brave", group = "a software"}),
+
+    awful.key({ key ,  }, "m",     function () awful.util.spawn("/home/flagmate/.config/awesome/scripts/mountusb") end,
+              {description = "mount a usb", group = "a software"})
 
 ) 
 for i = 1, 9 do

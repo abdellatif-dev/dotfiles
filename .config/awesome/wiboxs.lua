@@ -10,7 +10,7 @@ mywibox = {}
 mypromptbox = {}
 -- Menubar configuration
 
-local mytextclock = wibox.widget.textclock('<span font="hack Nerd Font regular 10"></span> %A %d/%b/%Y || %r ')
+local mytextclock = wibox.widget.textclock('<span font="Hack Nerd Font regular 10"></span> %A %d/%b/%Y || %r ')
 
 
 menubar.utils.terminal = "alacritty" -- Set the terminal for applications that require it

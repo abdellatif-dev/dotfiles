@@ -1,0 +1,4 @@
+#/bin/sh
+
+ls /dev/sd* | grep -v sda | dmenu | xargs -I {} sudo mount "{}" ~/mnt/
+
