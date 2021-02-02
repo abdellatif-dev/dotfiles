@@ -1,5 +1,7 @@
 # awesome config
-
+- mod keys
+    - **super key**  = mod4
+    - **alt key** = mod1
 # screenshots
 
 |                       layouts                       |                        wallpaper                        |
