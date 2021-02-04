@@ -43,6 +43,9 @@ globalkeys = gears.table.join(
     awful.key({ modkey,   }, "k",     function () awful.tag.incmwfact( 0.01)    end),
     awful.key({ modkey,   }, "j",     function () awful.tag.incmwfact(-0.01)    end),
 
+
+
+
     awful.key({ modkey, }, "t", function () awful.spawn(terminal) end,
             {description = "open alacritty", group = "a software"}),
 
@@ -77,7 +80,8 @@ globalkeys = gears.table.join(
               {description = "run brave", group = "a software"}),
 
     awful.key({ key ,  }, "m",     function () awful.util.spawn("/home/flagmate/.config/awesome/scripts/mountusb") end,
-              {description = "mount a usb", group = "a software"})
+              {description = "mount a drive", group = "a software"})
+
 
 ) 
 for i = 1, 9 do
@@ -135,10 +139,21 @@ clientkeys = awful.util.table.join(
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
     awful.key({ modkey,           }, "w",      function (c) c:kill()                         end),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
-    awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
     awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
-    awful.key({ modkey,           }, "`",      function (c) c.ontop = not c.ontop            end),
+    awful.key({ key,           }, "t",      function (c) c.ontop = not c.ontop            end),
+--                                                             ( move x, move y,resize x, resize y)
 
+    awful.key({ key,   }, "k",     function (c) c:relative_move(0, -20, 0, 0)    end),
+    awful.key({ key,   }, "j",     function (c) c:relative_move(0, 20, 0, 0)    end),
+    awful.key({ key,   }, "h",     function (c) c:relative_move(-20, 0, 0, 0)    end),
+    awful.key({ key,   }, "l",     function (c) c:relative_move(20, 0, 0, 0)    end),
+
+
+
+    awful.key({ key, "Control"  }, "k",     function (c) c:relative_move(0, 0, 0, -20)    end),
+    awful.key({ key, "Control"  }, "j",     function (c) c:relative_move(0, 0, 0, 20)    end),
+    awful.key({ key, "Control"  }, "h",     function (c) c:relative_move(0, 0, -20, 0)    end),
+    awful.key({ key, "Control"  }, "l",     function (c) c:relative_move(0, 0, 20, 0)    end),
 
     awful.key({ modkey,           }, "n",
         function (c)
