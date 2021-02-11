@@ -1,0 +1,13 @@
+res://default_env.tres
+res://scenes/bat.tscn
+res://scenes/grass.tscn
+res://scenes/hitbox.tscn
+res://scenes/hurtbox.tscn
+res://scenes/player.tscn
+res://scenes/stats.tscn
+res://scenes/world.tscn
+res://src/bat.gd
+res://src/hitbox.gd
+res://src/player.gd
+res://src/stats.gd
+res://src/sword.gd

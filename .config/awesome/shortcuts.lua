@@ -45,12 +45,15 @@ globalkeys = gears.table.join(
 
 
 
-
     awful.key({ modkey, }, "t", function () awful.spawn(terminal) end,
             {description = "open alacritty", group = "a software"}),
 
     awful.key({ modkey, }, "d", function () awful.util.spawn("dmenu_run") end,
             {description = "open dmenu_run", group = "a software"}),
+
+
+    awful.key({ modkey, }, "p", function () awful.util.spawn("passmenu") end,
+            {description = "open passmenu", group = "a software"}),
 
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),

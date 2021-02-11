@@ -1,0 +1,12 @@
+be5a452dd999bd920376c85c99f0f384
+::res://::1612878795
+ball.png::StreamTexture::1612878793::1612878798::1::::<><>::
+icon.png::StreamTexture::1612878793::1612878798::1::::<><>::
+paddle.png::StreamTexture::1612878793::1612878798::1::::<><>::
+pong.tscn::PackedScene::1612878793::0::1::::<><>::res://logic/paddle.gd<>res://paddle.png<>res://logic/ball.gd<>res://ball.png<>res://separator.png<>res://logic/wall.gd<>res://logic/ceiling_floor.gd
+separator.png::StreamTexture::1612878793::1612878798::1::::<><>::
+::res://logic/::1612878793
+ball.gd::GDScript::1612878793::0::1::::<>Area2D<>::
+ceiling_floor.gd::GDScript::1612878793::0::1::::<>Area2D<>::
+paddle.gd::GDScript::1612878793::0::1::::<>Area2D<>::
+wall.gd::GDScript::1612878793::0::1::::<>Area2D<>::

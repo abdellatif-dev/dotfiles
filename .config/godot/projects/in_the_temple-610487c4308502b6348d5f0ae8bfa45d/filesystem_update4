@@ -1,0 +1,4 @@
+res://default_env.tres
+res://scenes/player.tscn
+res://scenes/test lever.tscn
+res://src/walking.gd

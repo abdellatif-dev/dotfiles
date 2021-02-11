@@ -1,0 +1,5 @@
+res://default_env.tres
+res://scene/player.tscn
+res://scene/test.tscn
+res://src/Actor.gd
+res://start-assets/tileset.tres
