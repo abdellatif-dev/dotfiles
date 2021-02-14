@@ -15,7 +15,12 @@ Plugin 'RRethy/vim-illuminate'
 Plugin 'kaicataldo/material.vim', { 'branch': 'main' }
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'instant-markdown/vim-instant-markdown'
 " coc-nvim
+
+Plugin 'ap/vim-css-color'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 
@@ -157,4 +162,4 @@ autocmd FileType scss setl iskeyword+=@-@
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
+let g:cssColorVimDoNotMessMyUpdatetime = 1

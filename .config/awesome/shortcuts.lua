@@ -25,10 +25,16 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "l",  awful.tag.viewnext,
               {description = "view next", group = "tag"}),
 
-    awful.key({ modkey, "Control"    }, "h", function () awful.client.focus.byidx(1) end,
+    awful.key({ modkey, "Control"    }, "h", function () awful.client.focus.global_bydirection("left") end,
               {description = "focus next by index", group = "client"}),
 
-    awful.key({ modkey, "Control"    }, "l", function () awful.client.focus.byidx(-1) end,
+    awful.key({ modkey, "Control"    }, "l", function () awful.client.focus.global_bydirection("right") end,
+              {description = "focus previous by index", group = "client"}),
+
+    awful.key({ modkey, "Control"    }, "k", function () awful.client.focus.global_bydirection("up") end,
+              {description = "focus previous by index", group = "client"}),
+
+    awful.key({ modkey, "Control"    }, "j", function () awful.client.focus.global_bydirection("down") end,
               {description = "focus previous by index", group = "client"}),
 
     awful.key({ modkey, "Shift"   }, "h", function () awful.client.swap.byidx(  1)    end,
@@ -37,13 +43,8 @@ globalkeys = gears.table.join(
     awful.key({ modkey, "Shift"   }, "l", function () awful.client.swap.byidx( -1)    end,
               {description = "swap with previous client by index", group = "client"}),
 
-    awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
-              {description = "jump to urgent client", group = "client"}),
-
-    awful.key({ modkey,   }, "k",     function () awful.tag.incmwfact( 0.01)    end),
-    awful.key({ modkey,   }, "j",     function () awful.tag.incmwfact(-0.01)    end),
-
-
+    awful.key({ modkey,   }, "j",     function () awful.tag.incmwfact( 0.01)    end),
+    awful.key({ modkey,   }, "k",     function () awful.tag.incmwfact(-0.01)    end),
 
     awful.key({ modkey, }, "t", function () awful.spawn(terminal) end,
             {description = "open alacritty", group = "a software"}),

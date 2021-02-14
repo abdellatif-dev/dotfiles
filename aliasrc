@@ -6,17 +6,16 @@ alias cl='reset'
 alias rt='rm * -rf'
 alias f='df -h'
 alias ip='ip -color=auto'
-alias d='diff --color=auto'
 alias start='afk -k "starting soon" 0 7 0'
+alias d='diff --color=auto'
 # ls
 alias la='lsd -a'
 alias lla='lsd -la'
 alias ll='lsd -l'
-alias w='feh --bg-scale ~/Pictures/967564-free-best-linux-wallpapers-2560x1440-720p.jpg'
 alias ls='lsd'
 alias l='lsd'
 alias c='bat --theme TwoDark'
-alias p='sudo pacman'
+alias p='paru'
 alias s='sudo'
 alias k='killall'
 alias x='startx'
@@ -27,7 +26,7 @@ alias re='sudo reboot'
 alias cf='nvim ~/.zshrc' # Quick access to the ~/.zshrc file
 alias wget="wget -U 'noleak'"
 alias curl="curl --user-agent 'noleak'"
-alias grep='grep --color'
+alias grep='rg'
 alias gd='git diff --color | diff-so-fancy'
 alias g='git'
 alias r='rm -rivf'
@@ -39,13 +38,10 @@ alias tl='trash-list'
 alias cp='cp -iv'
 alias a='alsamixer'
 alias mv='mv -iv'
-alias m='sudo mount'
-alias u='sudo umount -l'
+alias u='sudo umount -l ~/mnt'
+alias btw="echo 'I use Arch linux'"
 alias v='nvim'
 # alias to auto cd
 alias dev='cd ~/Desktop/dev/'
 alias scripts="cd ~/scripts"
-alias btw="echo 'I use Arch linux'"
-alias dot='git --git-dir=dotfiles --work-tree=/home/flagmate'
-alias dotdiff='dot diff --color | diff-so-fancy'
-alias dotpush='dot push origin master'
+alias usb="cd ~/mnt"

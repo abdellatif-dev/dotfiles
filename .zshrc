@@ -1,7 +1,7 @@
 # Flex on the ubuntu users and systemd users
 neofetch
 # Plugin list in ~/.zsh/oh-my-zsh/plugins
-plugins=(git git-prompt archlinux nmap systemd)
+plugins=(archlinux nmap systemd)
 
 source $HOME/.zsh/oh-my-zsh/oh-my-zsh.sh
 
@@ -97,7 +97,5 @@ ex () {
 }
 
 
-#PROMPT='%F{10}[%B%F{7}%n%f%b%F{5}@%f%B%F{7}%m%f%b%F{10}]%f-%F{10}[%f%B%F{7}%t %f%b%F{10}]%f-%F{10}[%f%F{3}%B%1~%b%f%F{10}]%f
-#%F{10}[%B%F{7}%h%f%b%F{10}|%B%F{7}%?%f%b%F{10}]%f-%F{3}%B$%b%f: '
-
-eval "$(starship init zsh)"
+PROMPT='%F{10}[%B%F{7}%n%f%b%F{5}@%f%B%F{7}%m%f%b%F{10}]%f-%F{10}[%f%B%F{7}%t %f%b%F{10}]%f-%F{10}[%f%F{3}%B%1~%b%f%F{10}]%f
+%F{10}[%B%F{7}%h%f%b%F{10}|%B%F{7}%?%f%b%F{10}]%f-%F{3}%B$%b%f: '

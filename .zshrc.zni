@@ -1,0 +1,8 @@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' file-sort modification
+zstyle :compinstall filename '/home/flagmate/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
