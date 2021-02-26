@@ -1,0 +1,11 @@
+be5a452dd999bd920376c85c99f0f384
+::res://::1613683612
+default_env.tres::Environment::1613683311::0::1::::<><>::
+icon.png::StreamTexture::1613683011::1613683020::1::::<><>::
+Spatial.tscn::PackedScene::1613683311::0::1::::<><>::
+::res://blender/::1613683612
+TexturesCom_Pavement_CobblestoneMedieval08_8x4_1K_albedo.png::StreamTexture::1613672300::1613683612::0::::<><>::
+TexturesCom_Pavement_CobblestoneMedieval08_8x4_1K_ao.png::StreamTexture::1613672377::1613683613::0::::<><>::
+TexturesCom_Pavement_CobblestoneMedieval08_8x4_1K_height.png::StreamTexture::1613672337::1613683613::0::::<><>::
+TexturesCom_Pavement_CobblestoneMedieval08_8x4_1K_normal.png::StreamTexture::1613672368::1613683613::0::::<><>::
+TexturesCom_Pavement_CobblestoneMedieval08_8x4_1K_roughness.png::StreamTexture::1613672374::1613683613::0::::<><>::

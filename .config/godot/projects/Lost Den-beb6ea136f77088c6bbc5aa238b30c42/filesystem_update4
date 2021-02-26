@@ -1,0 +1,11 @@
+res://Asset/Merge/Main Menu.tscn
+res://Asset/Themes/MainTheme.tres
+res://Camara.tscn
+res://Globals.gd
+res://Level.gd
+res://Level.tscn
+res://Scripts/CameraMovement.gd
+res://Scripts/TileBase.gd
+res://addons/dialogic/Fonts/DefaultFont.tres
+res://addons/dialogic/Fonts/GlossaryFont.tres
+res://default_env.tres

@@ -1,0 +1,8 @@
+Camera
+CollisionShape
+KinematicBody
+CSGMesh
+RigidBody
+SoftBody
+MeshInstance
+Sprite3D

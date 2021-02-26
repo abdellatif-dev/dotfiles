@@ -1,0 +1,10 @@
+Light2D
+LightOccluder2D
+DirectionalLight
+Sprite
+KinematicBody2D
+CollisionShape2D
+RigidBody2D
+Node2D
+TileMap
+Camera2D

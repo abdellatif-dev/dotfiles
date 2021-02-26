@@ -1,0 +1,4 @@
+CSGMesh
+CollisionShape2D
+KinematicBody2D
+Light2D

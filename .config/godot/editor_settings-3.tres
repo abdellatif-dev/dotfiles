@@ -1,10 +1,10 @@
 [gd_resource type="EditorSettings" format=2]
 
 [resource]
-interface/editor/code_font_size = 15.0
 interface/theme/preset = "Custom"
 interface/theme/base_color = Color( 0.0352941, 0.0392157, 0.0588235, 1 )
 filesystem/directories/default_project_path = "/home/flagmate/Desktop/dev"
+docks/scene_tree/start_create_dialog_fully_expanded = true
 text_editor/theme/color_theme = "Custom"
 text_editor/highlighting/symbol_color = Color( 0.67, 0.785, 1, 1 )
 text_editor/highlighting/keyword_color = Color( 0.831373, 0.0980392, 0.0980392, 1 )
@@ -42,9 +42,11 @@ text_editor/indent/draw_spaces = true
 text_editor/appearance/line_numbers_zero_padded = true
 text_editor/appearance/word_wrap = true
 text_editor/files/trim_trailing_whitespace_on_save = true
+text_editor/tools/sort_members_outline_alphabetically = true
 text_editor/cursor/scroll_past_end_of_file = true
 text_editor/cursor/block_caret = true
 text_editor/completion/add_type_hints = true
+editors/3d/secondary_grid_color = Color( 0.380392, 0.380392, 0.380392, 1 )
 editors/2d/guides_color = Color( 0.913725, 0.521569, 0.403922, 1 )
 editors/2d/bone_color2 = Color( 0.313726, 0.352941, 0.478431, 0.901961 )
 editors/2d/bone_selected_color = Color( 0.913725, 0.521569, 0.403922, 0.901961 )
@@ -149,4 +151,4 @@ editors/3d_gizmos/gizmo_colors/joint_body_b = Color( 0.6, 0.9, 1, 1 )
 text_editor/highlighting/gdscript/function_definition_color = Color( 0.913725, 0.521569, 0.403922, 1 )
 text_editor/highlighting/gdscript/node_path_color = Color( 0.980392, 0.784314, 0.415686, 1 )
 text_editor/help/sort_functions_alphabetically = true
-projects/::home::flagmate::Desktop::dev::rpg_game = "/home/flagmate/Desktop/dev/rpg_game"
+projects/::home::flagmate::Desktop::dev::temple = "/home/flagmate/Desktop/dev/temple"

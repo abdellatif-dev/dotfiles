@@ -1,0 +1,5 @@
+res://default_env.tres
+res://scenes/player/player.gd
+res://scenes/player/player.tscn
+res://scenes/player/player2.gd
+res://scenes/test/test_level.tscn

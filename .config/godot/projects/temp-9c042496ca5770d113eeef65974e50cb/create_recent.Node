@@ -1,0 +1,9 @@
+RigidBody2D
+CollisionShape2D
+AnimationPlayer
+KinematicBody2D
+Node2D
+SpotLight
+OmniLight
+MeshInstance
+MeshInstance2D
