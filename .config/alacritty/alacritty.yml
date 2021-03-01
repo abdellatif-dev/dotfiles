@@ -13,19 +13,20 @@ window:
 
 font:
   normal:
-    family: Hack Nerd Font 
+    family: Source Code Pro
     style: Regular
 
   bold:
-    family: Hack Nerd Font
+    family: Source Code Pro
     style: Bold
 
   italic:
-    family: Hack Nerd Font
+    family: Source Code Pro
+    family: Monospace 
     style: Italic
 
   bold_italic:
-    family: Hack Nerd Font
+    family: Source Code Pro
     style: Bold Italic
 
   size: 10.0
@@ -41,23 +42,23 @@ colors:
   normal:
     black:   '#0F111A'
     red:     '#D41919'
-    green:   '#5E97AF'
+    green:   '#57F199'
     yellow:  '#FAC86A'
-    blue:    '#A574C3'
-    magenta: '#57F199'
+    blue:    '#5E97AF'
+    magenta: '#A574C3'
     cyan:    '#505A7A'
     white:   '#F9FAFD'
 
   # Bright colors
   bright:
-    black:   '#45BABF'
+    black:   '#777777'
     red:     '#EC0101'
-    green:   '#89DDFF'
+    green:   '#A9FECD'
     yellow:  '#E98567'
-    blue:    '#B797CA'
-    magenta: '#A9FECD'
+    blue:    '#89DDFF'
+    magenta: '#B797CA'
     cyan:    '#B2B2CC'
-    white:   '#A4A4A4'
+    white:   '#dddddd'
 
 
 # Background opacity
@@ -70,11 +71,3 @@ selection:
 mouse:
   # If this is `true`, the cursor is temporarily hidden when typing.
   hide_when_typing: true 
-
-  url:
-    launcher:
-      program: xdg-open
-
-debug:
-  render_timer: false
-  print_events: false
